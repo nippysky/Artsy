@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+main,
+body {
+  @apply bg-white scrollbar-hide scroll-smooth;
+}
+
 @layer base {
   @font-face {
     font-family: "Satoshi-Variable";
@@ -22,13 +27,9 @@
   body,
   html {
     font-family: "satoshi";
+    padding: 0;
+    margin: 0;
   }
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -38,4 +39,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.spinner {
+  display: none !important;
 }

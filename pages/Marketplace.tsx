@@ -1,5 +1,10 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 export default function Marketplace() {
-  return <div>Marketplace</div>;
+  return (
+    <section className="w-full bg-white">
+      <Navbar />
+    </section>
+  );
 }
